@@ -1,0 +1,85 @@
+body 
+{
+    background-image: url("bg-palm.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+#avatar
+{
+    scale: .85;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-image: url(avatar-ej1.png);
+}
+
+.nombre
+{
+    position: relative;
+    top: -40px;
+    padding: 5px;
+    size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.contenedor
+{
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link
+{
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    text-decoration-color: black;
+    border: 2px solid white;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#check
+{
+    width: 0px;
+    scale: 1.5;
+    height: 0px;
+    position: relative;
+    top: -36px;
+    right: 180px;
+    display: flex;
+    flex-direction: column;
+    color: turquoise;
+}
+
+.contenedorRedes
+{
+    padding-top: 50px;
+    margin: auto;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#redSocial
+{
+    margin: auto;
+    scale: 1.5;
+}
