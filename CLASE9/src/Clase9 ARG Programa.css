@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Nunito";
+    src: url(font/Nunito-VariableFont_wght.ttf);
+}
+
+body
+{
+    background-image: url(img\ondas.svg);
+    background-size: 100%;
+    background-position-y: 330px;
+    background-color: #22193F;
+    background-repeat: no-repeat;
+}
+
+.container
+{
+    position: relative;
+    top: 150px;
+    width: 800px;
+    height: 400px;
+    flex-direction: column;
+}
+
+#img
+{
+    background-image: url("img\img-login.jpg");
+    background-size: cover;
+    width: 650px;
+    height: 395px;
+}
+
+#login
+{
+    width: 650px;
+    height: 395px;
+}
+
+#logo
+{
+    position: relative;
+    top: 150px;
+    left: 75px;
+    width: 210px;
+}
+
+#titulo
+{
+    position: relative;
+    top: 50px;
+    left: 25px;
+    font-size: 28px;
+    font-family: "Nunito";
+    font-weight:bolder;
+    color: #22193F;
+}
+
+.formulario
+{
+    position: relative;
+    border: 1px solid #C4C4C4;
+    border-radius: 50px;
+    top: 75px;
+    left: 10px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.textForm
+{
+    font-family: "Nunito";
+    position: relative;
+    top: 7px;
+    left: 35px;
+    font-size: 16px;
+}
+
+#candado
+{
+    position: relative;
+    top: 235px;
+    left: 13px;
+    color: #6A2A83;
+}
+
+#email
+{
+    position: relative;
+    top: 168px;
+    left: 38px;
+    color: #6A2A83;
+}
+
+#olvidar
+{
+    position: relative;
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 16px;
+    color: #E21982;
+    top: 70px;
+    left: 170px;
+}
+
+.enviar
+{
+    position: relative;
+    top: 75px;
+    height: 35px;
+    border-color:#E21982;
+    border-radius: 50px;
+    background-color: #E21982;
+}
+
+.ingresar
+{
+    position: relative;
+    left: 150px;
+    font-size: 16px;
+    font-family: "Nunito";
+    font-weight: bold;
+    color: white;
+}
