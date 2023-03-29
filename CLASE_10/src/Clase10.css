@@ -1,0 +1,32 @@
+.ej1
+{
+    border-style: solid;
+    border-color: crimson;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej2
+{
+    border-style: solid;
+    border-color: skyblue;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej3
+{
+    border-style: solid;
+    border-color: limegreen;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.arrays
+{
+    margin: 5px;
+    width: 250px;
+    border-style: solid;
+    border-color:darkorchid;
+    border-width: 1px;
+}
