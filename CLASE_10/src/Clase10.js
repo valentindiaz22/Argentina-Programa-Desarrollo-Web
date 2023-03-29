@@ -123,13 +123,74 @@ ej2Promedio(arrayCopia);
 
 // ej 3
 let ej3 = [1,2,3,4,5,6];
+
 function ejer3(array)
 {
     for(i = 0; i < array.length; i++)
     {
-        array[i] = Math.pow(array[i], 2)
-        console.log(array[i])
+        array[i] = Math.pow(array[i], 2);
         $("#ej3").append(array[i]," ");
     }
 }
 ejer3(ej3);
+
+// ej 4
+let ej4 = [1,-4,12,0,-3,29,-15];
+
+function ejer4(array)
+{
+    let aux = 0;
+    for(i = 0; i < array.length; i++)
+    {
+        if(array[i]>0)
+        {
+            aux += array[i];
+        }
+    } 
+    $("#ej4").append(aux);
+}
+ejer4(ej4);
+
+// ej 4
+let nombres = ["Florencia","Lucas","Ezequiel","Matias","Bruno","Gustavo","Martin"];
+let seisLetras = nombres.filter(nombre => nombre.length >= 6);
+$("#ej5").text("Array cuyos elementos tienen almenos 6 letras: "+seisLetras);
+let empiezaM = nombres.filter(nombre => nombre[0] =="M");
+$("#empiezaM").text("Array cuyos elementos comienzan con M: "+empiezaM);
+let alfa = nombres.sort();
+console.log(" 6) c) Array ordenado alfabeticamente: ",alfa);
+let iniciales = []
+
+function inicial(array, iniciales)
+{
+    for(i = 0; i < array.length; i++)
+    {
+        let aux = array[i]
+        iniciales.push(aux[0])
+    }
+}
+
+inicial(nombres,iniciales);
+$("#iniciales").text("Array con las iniciales en orden alfabetico: "+iniciales);
+
+arrayMayus = []
+
+function aMayuscula(array,arrayMayus)
+{
+    for(i = 0; i < array.length; i++)
+    {
+        let stringNormal = array[i].toString();
+        let stringMayus = stringNormal.toUpperCase()
+        arrayMayus.push(stringMayus)
+    }
+}
+aMayuscula(nombres,arrayMayus);
+$("#aMayus").text("Array con las letras en mayuscula: "+arrayMayus);
+
+function comJ(array)
+{
+    let aux = array.some(l => l[0] == "J");
+    $("#comienzaJ").text("¿Algún elemento del array comienza con J?: "+aux);
+}
+
+comJ(nombres);
