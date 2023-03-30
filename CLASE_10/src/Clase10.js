@@ -248,3 +248,18 @@ $("#primParrafo").click(function()
 {
     alert("Tocaste el primer parrafo")
 });
+
+//ej 11
+let aux = false;
+$(".fila").click(function()
+{
+    aux = !aux;
+    if(aux = false)
+    {
+        $("#contenedor").css("background-color","bisque");
+    }
+    else
+    {
+        $("#contenedor").css("background-color","beige");
+    }
+})

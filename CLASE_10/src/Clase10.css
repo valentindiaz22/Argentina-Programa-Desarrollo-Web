@@ -83,6 +83,14 @@ body
     border-width: 2px;
 }
 
+.ej11
+{
+    border-style: solid;
+    border-color: hotpink;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 .arrays
 {
     margin: 5px;
@@ -108,4 +116,23 @@ body
     width: 175px;
     height: 30px;
     margin: 5px;
+}
+
+#contenedor
+{
+    border-style: solid;
+    border-color: crimson;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    background-color:bisque;
+}
+
+.fila
+{
+    border-style: solid;
+    width: 499px;
+    height: 124px;
+    margin: auto;
+    border-width: 1px;
 }
