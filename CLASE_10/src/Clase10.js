@@ -269,3 +269,78 @@ $(".elemLi").click(function()
 {
     $(this).hide();
 })
+
+//ej 13
+$("#sol").hide();
+colorBase = false;
+s = false;
+o = false;
+l = false;
+$("#fil1").click(function()
+{
+    colorBase = !colorBase;
+    if(colorBase = false)
+    {
+        $(this).css("background-color","bisque");
+    }
+    else
+    {
+        $(this).css("background-color","skyblue");
+        s = true;
+        solActivador();
+    }
+})
+
+$("#fil2").click(function()
+{
+    colorBase = !colorBase;
+    if(colorBase = false)
+    {
+        $(this).css("background-color","white");
+    }
+    else
+    {
+        $(this).css("background-color","white");
+        o = true;
+        solActivador();
+    }
+})
+
+$("#fil3").click(function()
+{
+    colorBase = !colorBase;
+    if(colorBase = false)
+    {
+        $(this).css("background-color","bisque");
+    }
+    else
+    {
+        $(this).css("background-color","skyblue");
+        l = true;
+        solActivador();
+    }
+})
+console.log(s)
+function solActivador()
+{
+    if(s == true && o == true && l == true)
+    {
+        $("#sol").show();
+    }    
+}
+
+//ej 14
+$("#1ernoti").click(function()
+{
+    $(".parrafNoti1").css("font-size", "30px");
+})
+
+$("#2danoti").click(function()
+{
+    $(".parrafNoti2").css("font-size", "30px");
+})
+
+$("#3ernoti").click(function()
+{
+    $(".parrafNoti3").css("font-size", "30px");
+})
