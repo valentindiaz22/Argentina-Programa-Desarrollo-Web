@@ -151,14 +151,14 @@ function ejer4(array)
 }
 ejer4(ej4);
 
-// ej 4
+// ej 5
 let nombres = ["Florencia","Lucas","Ezequiel","Matias","Bruno","Gustavo","Martin"];
 let seisLetras = nombres.filter(nombre => nombre.length >= 6);
-$("#ej5").text("Array cuyos elementos tienen almenos 6 letras: "+seisLetras);
+$("#ej5").text("Array cuyos elementos tienen almenos 6 letras: ["+seisLetras+"]");
 let empiezaM = nombres.filter(nombre => nombre[0] =="M");
-$("#empiezaM").text("Array cuyos elementos comienzan con M: "+empiezaM);
+$("#empiezaM").text("Array cuyos elementos comienzan con M: ["+empiezaM+"]");
 let alfa = nombres.sort();
-console.log(" 6) c) Array ordenado alfabeticamente: ",alfa);
+console.log(" 5) c) Array ordenado alfabeticamente: ["+alfa+"]");
 let iniciales = []
 
 function inicial(array, iniciales)
@@ -171,7 +171,7 @@ function inicial(array, iniciales)
 }
 
 inicial(nombres,iniciales);
-$("#iniciales").text("Array con las iniciales en orden alfabetico: "+iniciales);
+$("#iniciales").text("Array con las iniciales en orden alfabetico: ["+iniciales+"]");
 
 arrayMayus = []
 
@@ -185,7 +185,7 @@ function aMayuscula(array,arrayMayus)
     }
 }
 aMayuscula(nombres,arrayMayus);
-$("#aMayus").text("Array con las letras en mayuscula: "+arrayMayus);
+$("#aMayus").text("Array con las letras en mayuscula: ["+arrayMayus+"]");
 
 function comJ(array)
 {
@@ -194,3 +194,57 @@ function comJ(array)
 }
 
 comJ(nombres);
+
+// ej 6
+let colores = ["azul","amarillo","rojo","verde","café","rosa"];
+
+function btnColor()
+{
+    let color = prompt("Ingrese un color, en minusculas y con las tildes correspondientes");
+    let aux = colores.some(c => c == color);
+    return alert("¿El color se encuentra en el array?: "+aux);
+}
+
+// ej 7
+let pares = [1,3,4,10,12,31,23,16];
+let arrayPar = [];
+
+function pasarPar(arrayPar)
+{
+    arrayPar = pares.filter(n => n % 2 === 0);
+    $("#arrayPar").text("Array con solo los números par: ["+arrayPar+"]");
+}
+
+pasarPar(arrayPar);
+
+// ej 8
+let palabras = ["hola","manolo","uña","honda","aire"];
+let palabrasVocal = [];
+
+function comprobarVocal(palabras,palabrasVocal)
+{
+    palabrasVocal = palabras.filter(p => p[0] == "a" || p[0] == "e" || p[0] == "i" || p[0] == "o" || p[0] == "u");
+    $("#arrayVocales").text("Array solo con las palabras que empiezan por una vocal: ["+palabrasVocal+"]");
+}
+
+comprobarVocal(palabras,palabrasVocal);
+
+// ej 9
+let arrayPosiciones = ["yoni",3,"pepe",5,"10"];
+
+function intercambioPos(array,elem1,elem2)
+{
+    let aux = array[elem1];
+    let aux2 = array[elem2];
+    array[elem2] = aux;
+    array[elem1] = aux2;
+    $("#arrayCambio").text("Array con el elemento de la posición [0](yoni) y el elemento de la posición [3](5) intercambiados: ["+array+"]");
+}
+
+intercambioPos(arrayPosiciones,0,3);
+
+//ej 10
+$("#primParrafo").click(function()
+{
+    alert("Tocaste el primer parrafo")
+});

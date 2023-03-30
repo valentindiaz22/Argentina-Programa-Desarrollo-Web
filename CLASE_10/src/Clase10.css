@@ -1,3 +1,8 @@
+body
+{
+    background-image: url(img/fondo.jpg);
+}
+
 .ej1
 {
     border-style: solid;
@@ -38,6 +43,45 @@
     border-width: 2px;
 }
 
+.ej6
+{
+    border-style: solid;
+    border-color: springgreen;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej7
+{
+    border-style: solid;
+    border-color: gold;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej8
+{
+    border-style: solid;
+    border-color: lightpink;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej9
+{
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.ej10
+{
+    border-style: solid;
+    border-color: sandybrown;
+    border-radius: 5px;
+    border-width: 2px;
+}
 
 .arrays
 {
@@ -55,4 +99,13 @@
     border-color:chocolate;
     border-width: 1px;
     border-radius: 10px;
+}
+
+.parrafo
+{
+    border-style: solid;
+    margin: 10px;
+    width: 175px;
+    height: 30px;
+    margin: 5px;
 }
