@@ -38,7 +38,7 @@ function creadorDes(array)
     let i = 0;
     for(i; i < array.length; i++)
     {
-        $("ul").append("<li>",array[i]);
+        $("#listaDes").append("<li>",array[i]);
     }
 }
 
@@ -250,11 +250,11 @@ $("#primParrafo").click(function()
 });
 
 //ej 11
-let aux = false;
+let auxColor = false;
 $(".fila").click(function()
 {
-    aux = !aux;
-    if(aux = false)
+    auxColor = !auxColor;
+    if(auxColor = false)
     {
         $("#contenedor").css("background-color","bisque");
     }
@@ -262,4 +262,10 @@ $(".fila").click(function()
     {
         $("#contenedor").css("background-color","beige");
     }
+})
+
+//ej 12
+$(".elemLi").click(function()
+{
+    $(this).hide();
 })

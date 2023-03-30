@@ -91,6 +91,14 @@ body
     border-width: 2px;
 }
 
+.ej12
+{
+    border-style: solid;
+    border-color: peru;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 .arrays
 {
     margin: 5px;
@@ -133,6 +141,14 @@ body
     border-style: solid;
     width: 499px;
     height: 124px;
+    margin: auto;
+    border-width: 1px;
+}
+
+.ul
+{
+    border-style: solid;
+    width: 150px;
     margin: auto;
     border-width: 1px;
 }
