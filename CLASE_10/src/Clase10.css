@@ -194,3 +194,53 @@ body
     position: relative;
     left: 50px;
 }
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: white;
+}
+
+.grid-item
+{
+    border: 1px solid;
+    text-align: center;
+    padding: 30px;
+}
+
+#btnMatriz
+{
+    position: relative;
+    left: 600px;
+}
+
+.grid-container2X2
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: white;
+}
+
+#div20
+{
+    border: 3px solid;
+    width: 800px;
+    height: 70px;
+    background-color: white;
+    margin: auto;
+}
+
+.divsOc
+{
+    border: 3px solid;
+    background-color: white;
+}

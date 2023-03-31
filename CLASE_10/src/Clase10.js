@@ -320,7 +320,7 @@ $("#fil3").click(function()
         solActivador();
     }
 })
-console.log(s)
+
 function solActivador()
 {
     if(s == true && o == true && l == true)
@@ -343,4 +343,153 @@ $("#2danoti").click(function()
 $("#3ernoti").click(function()
 {
     $(".parrafNoti3").css("font-size", "30px");
+})
+
+//ej 15
+$("#btnMatriz").click(function()
+{
+    $(".grid1").text("-");
+})
+
+//ej 16
+$("#btnWiki").click(function()
+{
+    $("#hiperV").attr("href", "https://es.wikipedia.org/wiki/Wikipedia:Portada");
+    $("#hiperV").text("Wikipedia");
+})
+
+$("#btnLinke").click(function()
+{
+    $("#hiperV").attr("href", "https://www.linkedin.com/");
+    $("#hiperV").text("LinkedIn");
+})
+
+$("#btnGit").click(function()
+{
+    $("#hiperV").attr("href", "https://github.com/");
+    $("#hiperV").text("GitHub");
+})
+
+//ej 17
+$("#strong1").click(function()
+{
+    $(this).hide()
+})
+
+$("#strong2").click(function()
+{
+    $(this).hide()
+})
+
+$("#strong3").click(function()
+{
+    $(this).hide()
+})
+
+$("#strong4").click(function()
+{
+    $(this).hide()
+})
+
+//ej 18
+$("#grid1").mouseover(function()
+{
+    $(this).css("background-color", "red");
+})
+
+$("#grid2").mouseover(function()
+{
+    $(this).css("background-color", "blue");
+})
+
+$("#grid3").mouseover(function()
+{
+    $(this).css("background-color", "green");
+})
+
+$("#grid4").mouseover(function()
+{
+    $(this).css("background-color", "yellow");
+})
+
+//ej 19
+$("#grid2_1").mouseover(function()
+{
+    $(this).css("background-color", "red");
+})
+
+$("#grid2_1").mouseout(function()
+{
+    $(this).css("background-color", "white");
+})
+
+$("#grid2_2").mouseover(function()
+{
+    $(this).css("background-color", "blue");
+})
+
+$("#grid2_2").mouseout(function()
+{
+    $(this).css("background-color", "white");
+})
+
+$("#grid2_3").mouseover(function()
+{
+    $(this).css("background-color", "green");
+})
+
+$("#grid2_3").mouseout(function()
+{
+    $(this).css("background-color", "white");
+})
+
+$("#grid2_4").mouseover(function()
+{
+    $(this).css("background-color", "yellow");
+})
+
+$("#grid2_4").mouseout(function()
+{
+    $(this).css("background-color", "white");
+})
+
+//ej 20
+$("#div20").dblclick(function()
+{
+    $(this).css("width", "250");
+    $(this).css("height", "250");
+    $(this).dblclick(function()
+    {
+        $(this).css("width", "800");
+        $(this).css("height", "70");
+    })
+})
+
+//ej 21
+$("#divIn").hide();
+$("#divOculto").click(function()
+{
+    $(this).fadeOut();
+    $("#divIn").fadeIn();
+
+})
+
+//ej 22
+$("#selectNombres").click(function()
+{
+    console.log($("#selectNombres option:selected").text());
+})
+
+//ej 23
+$("#linkFace").click(function()
+{
+    console.log("https://www.facebook.com/");
+})
+
+//ej 24
+$("#formEnviado").hide();
+$("#btnDni").click(function()
+{
+    $("textarea#textDni").val("");
+    $("#formEnviado").show();
 })
